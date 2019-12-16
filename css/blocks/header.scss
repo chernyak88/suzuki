@@ -1,0 +1,49 @@
+.header {
+	padding: 5px 0 15px 0;
+
+	&__container {
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.logos {
+	display: flex;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	margin-right: 15px;
+
+	&__two {
+		margin-right: 40px;
+	}
+
+	&__text {
+		width: 185px;
+		font-size: 14px;
+	}
+}
+
+.phone {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+
+	&__number {
+		font-family: "suzukiproheadline";
+		font-weight: bold;
+		font-size: 25px;
+		color: #000;
+	}
+
+	&__link {
+		font-size: 14px;
+		color: $blue;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

@@ -1,0 +1,75 @@
+html {
+  font-size: 16px;
+
+  @include tablets() {
+    font-size: 14px;
+  }
+
+  @include phones() {
+    font-size: 13px;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "suzukiproregular", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.42;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  width: 100%;
+  min-width: 0px;
+}
+
+ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform;
+}
+
+.container {
+  width: 95%;
+  max-width: 1040px;
+  margin: 0 auto;
+  display: flex;
+}
+
+button {
+  border:none;
+  background: transparent;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}

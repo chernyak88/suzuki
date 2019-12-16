@@ -1,0 +1,108 @@
+.slider {
+  height: 100%;
+  max-height: 695px;
+  background-color: #ebebeb;
+  
+  &__list {
+    position: relative;
+  }
+
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1.2s;
+    -moz-transition: opacity 1.2s;
+    -o-transition: opacity 1.2s;
+    transition: opacity 1.2s;
+
+    &.showing {
+      opacity: 1;
+      z-index: 2;
+    }
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+  }
+
+  &__desc {
+    width: 95%;
+    max-width: 1040px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+  }
+
+  &__name {
+    font-size: 38px;
+  }
+
+  &__price {
+    font-family: "suzukiproheadline";
+    font-size: 88px;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 29px;
+      height: 9px;
+      background-color: #fff;
+      vertical-align: middle;
+      margin-left: 40px;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 270px;
+    height: 66px;
+    background-color: $blue;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 66px;
+
+    &:hover {
+      background-color: $light-blue;
+      transition: .3s;;
+    }
+  }
+
+  &__arrows {
+    display: flex;
+    width: 100%;
+    max-width: 1040px;
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+
+  &__arrow {
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: #fff;
+    margin-right: 15px;
+    outline: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active {
+      background-color: $blue;
+    }
+  }
+}

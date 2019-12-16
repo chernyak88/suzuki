@@ -1,0 +1,22 @@
+//colors
+$blue: #005aad;
+$light-blue: #6097cc;
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+//media
+@import "layout/media.scss";
+
+//normalize
+@import "layout/normalize.scss";
+
+//setups
+@import "layout/fonts.scss";
+@import "layout/base.scss";
+
+//block
+@import "./blocks/header.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/tab.scss";

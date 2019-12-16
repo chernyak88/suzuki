@@ -1,0 +1,15 @@
+.tab {
+  background-color: #ebebeb;
+
+  &__list {
+    width: 100%;
+    display: flex;
+  }
+
+  &__item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
