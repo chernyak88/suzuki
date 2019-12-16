@@ -1,10 +1,9 @@
 .slider {
-  height: 100%;
-  max-height: 695px;
-  background-color: #ebebeb;
+  position: relative;
   
   &__list {
-    position: relative;
+    width: 100%;
+    height: 100%;
   }
 
   &__item {
@@ -83,7 +82,7 @@
     width: 100%;
     max-width: 1040px;
     position: absolute;
-    top: 500px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
@@ -104,5 +103,127 @@
     &.active {
       background-color: $blue;
     }
+  }
+}
+
+@media (max-width: 1170px) {
+  .slider__name {
+    font-size: 30px;
+  }
+  .slider__price {
+    font-size: 60px;
+  }
+  .slider__link {
+    width: 250px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .slider__arrows {
+    bottom: 40px;
+    left: 53%;
+  }
+}
+
+@media (max-width: 930px) {
+  .slider__arrows {
+    bottom: 30px;
+  }
+  .slider__desc {
+    top: 30px;
+  }
+}
+
+@media (max-width: 769px) {
+  .slider__name {
+    font-size: 24px;
+  }
+  .slider__price {
+    font-size: 48px;
+  }
+  .slider__link {
+    width: 200px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 680px) {
+  .slider__name {
+    font-size: 20px;
+  }
+  .slider__price {
+    font-size: 38px;
+  }
+  .slider__price::after {
+    width: 20px;
+    height: 6px;
+    margin-left: 20px;
+  }
+  .slider__link {
+    width: 200px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+  }
+  .slider__arrows {
+    bottom: 15px;
+  }
+  .slider__desc {
+    top: 15px;
+  }
+}
+
+@media (max-width: 535px) {
+  .slider__name {
+    font-size: 16px;
+  }
+  .slider__price {
+    font-size: 26px;
+  }
+  .slider__price::after {
+    width: 15px;
+    height: 4px;
+    margin-left: 10px;
+  }
+  .slider__link {
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+  .slider__arrows {
+    bottom: 15px;
+  }
+  .slider__desc {
+    top: 15px;
+  }
+}
+
+@media (max-width: 430px) {
+  .slider__name {
+    font-size: 13px;
+  }
+  .slider__price {
+    font-size: 20px;
+  }
+  .slider__price::after {
+    width: 12px;
+    height: 3px;
+    margin-left: 8px;
+  }
+  .slider__link {
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 11px;
+  }
+  .slider__arrows {
+    bottom: 5px;
+    left: 95%;
   }
 }

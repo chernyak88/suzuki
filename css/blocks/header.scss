@@ -16,6 +16,11 @@
 	align-items: center;
 	margin-right: 15px;
 
+	&__one {
+		border: 1px solid #fff;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+
 	&__two {
 		margin-right: 40px;
 	}
@@ -46,4 +51,50 @@
 			text-decoration: underline;
 		}
 	}
+}
+
+
+@media (max-width: 769px) {
+
+	.header__container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.phone {
+		text-align: center;
+	}
+
+	.logo__text {
+		padding-top: 5px;
+	}
+
+	.logo__two {
+		margin-right: 15px;
+	}
+
+}
+
+@media (max-width: 600px) {
+
+	.logos {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.logo {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.logo__text {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.logo__img {
+		margin: 0 auto;
+	}
+
 }

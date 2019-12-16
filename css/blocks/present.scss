@@ -1,0 +1,161 @@
+.present {
+
+  &__container {
+    flex-direction: column;
+  }
+
+  &__title {
+    font-family: "suzukiproheadline";
+    font-size: 42px;
+    max-width: 487px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 150px;
+  }
+
+  &__block {
+    height: 678px;
+    background: $blue;
+  }
+
+}
+
+.support {
+  width: 100%;
+  display: flex;
+  margin-top: -90px;
+  margin-bottom: 150px;
+
+  &__item {
+    width: 33%;
+    background-color: #fff;
+    box-shadow: 0px 10px 40px rgba(14, 41, 66, 0.2);
+    padding: 20px;
+    margin-right: 25px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    font-family: "suzukiproheadline";
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.services {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+
+  &__item {
+    width: 245px;
+    text-align: center;
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-family: "suzukiproheadline";
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__desc {
+    font-family: "suwannaaphum";
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .present__block {
+    height: 578px;
+  }
+
+  .present__title {
+    margin-bottom: 100px;
+  }
+
+  .support {
+    margin-top: -60px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 769px) {
+  .support {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .support__item {
+    width: calc(50% - 10px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .support__item:nth-child(3) {
+    margin-bottom: 0;
+  }
+  .support__item:nth-child(2) {
+    margin-right: 0;
+  }
+  .present__block {
+    height: 1000px;
+  }
+
+  .support {
+    margin-top: -60px;
+    margin-bottom: 60px;
+  }
+  .services {
+    flex-wrap: wrap;
+  }
+  .services__item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .present__title {
+    font-size: 28px;
+  }
+  .support__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .present__block {
+    height: 1570px;
+  }
+  .support__img {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 532px) {
+  .present__block {
+    height: 1600px;
+  }
+}
+
+@media (max-width: 380px) {
+  .present__block {
+    height: 1500px;
+  }
+}

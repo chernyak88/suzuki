@@ -11,5 +11,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    &.active {
+      background-color: #fff;;
+
+      .tab__title {
+        color: $blue;
+      }
+    }
+  }
+
+  &__title {
+    font-family: "suzukiproheadline";
+    font-size: 30px;
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 769px) {
+  .tab__title {
+    font-size: 22px;
+  }
+  .tab__container {
+    width: 100%;
   }
 }
