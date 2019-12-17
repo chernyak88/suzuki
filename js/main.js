@@ -108,5 +108,11 @@ function init() {
     };
 }
 
+var map = document.querySelector(".map");
+var contacts = document.querySelector(".contacts");
+map.addEventListener("click", function(){
+  contacts.classList.toggle('hidden');
+});
+
   
 
